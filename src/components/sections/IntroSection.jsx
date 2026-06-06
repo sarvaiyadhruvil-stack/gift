@@ -97,15 +97,15 @@ export default function IntroSection() {
           transition={{ duration: 1.2, ease: [0.76, 0, 0.24, 1] }}
           className="font-script text-5xl md:text-7xl text-dusty-rose drop-shadow-[0_0_20px_rgba(201,139,154,0.25)]"
         >
-          Three years of...
+          A collection of beautiful moments...
         </motion.h2>
       </div>
 
       {/* Stats */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-8 mb-12 w-full max-w-3xl justify-center relative z-10">
-        <StatCard value={1095} label="Days"     delay={0.1}  icon="☀️" />
-        <StatCard value="∞"   label="Memories" delay={0.25} icon="✨" />
-        <StatCard value={1}   label="You"      delay={0.4}  icon="❤️" />
+        <StatCard value="100%" label="Smile"    delay={0.1}  icon="✨" />
+        <StatCard value="∞"    label="Memories" delay={0.25} icon="💖" />
+        <StatCard value={1}    label="You"      delay={0.4}  icon="❤️" />
       </div>
 
       {/* ── Visual Media Collage (Fills Empty Space beautifully) ── */}
@@ -126,13 +126,13 @@ export default function IntroSection() {
         >
           <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
           <MediaRender
-            src="/WhatsApp Image 2026-05-23 at 8.19.21 PM.jpeg"
+            src="/WhatsApp Image 2026-06-03 at 9.35.31 PM.jpeg"
             alt="Beautiful moment"
             className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
           />
         </motion.div>
 
-        {/* Center Video Card - taller, upright, glowing */}
+        {/* Center Image Card - taller, upright, glowing */}
         <motion.div
           initial={{ opacity: 0, y: 50, scale: 0.95 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -148,8 +148,8 @@ export default function IntroSection() {
         >
           <div className="absolute inset-0 bg-black/15 group-hover:bg-transparent transition-colors duration-500 z-10" />
           <MediaRender
-            src="/WhatsApp Video 2026-05-23 at 8.19.24 PM (1).mp4"
-            alt="Beautiful video"
+            src="/WhatsApp Image 2026-06-03 at 9.35.33 PM.jpeg"
+            alt="Beautiful image"
             className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />
           <div className="absolute bottom-4 left-0 right-0 text-center z-20 pointer-events-none drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
@@ -175,7 +175,7 @@ export default function IntroSection() {
         >
           <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
           <MediaRender
-            src="/WhatsApp Image 2026-05-23 at 8.19.20 PM (2).jpeg"
+            src="/WhatsApp Image 2026-06-03 at 9.35.34 PM.jpeg"
             alt="Precious moment"
             className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
           />

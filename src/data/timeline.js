@@ -1,72 +1,52 @@
 export const timelineData = [
   {
     id: 1,
-    date: "Year 1 · 2022",
+    date: "The Beginning",
     title: "First Meeting",
-    subtitle: "The beginning of everything",
-    description: "That one moment I saw you and the whole world went quiet...",
+    subtitle: "Where our hearts connected",
+    description: "That one moment we took our first steps together. The nervous laughter, the butterflies, and the sweet realization that you were becoming my favorite person.",
     side: "left",
-    image: "/WhatsApp Image 2026-05-23 at 8.30.10 PM (1).jpeg",
+    image: "/WhatsApp Image 2026-06-03 at 9.35.31 PM.jpeg",
     emoji: "🌸"
   },
   {
     id: 2,
-    date: "2022",
-    title: "Our First Date",
-    subtitle: "Nervous smiles and butterflies",
-    description: "You wore that smile that made me forget how to speak...",
+    date: "Endless Conversations",
+    title: "Late Night Talks",
+    subtitle: "Talking until the sun came up",
+    description: "Connecting deeply over endless phone calls, sharing secrets, hopes, and dreams, realizing we were two halves of the same soul.",
     side: "right",
-    image: "/WhatsApp Video 2026-05-23 at 8.30.08 PM.mp4",
-    emoji: "🌹"
-  },
-  {
-    id: 3,
-    date: "2022",
-    title: "Late Night Calls",
-    subtitle: "3am conversations that changed everything",
-    description: "We'd talk until sunrise without realizing it...",
-    side: "left",
-    image: "/WhatsApp Image 2026-05-23 at 8.30.14 PM (1).jpeg",
+    image: "/WhatsApp Image 2026-06-03 at 9.35.32 PM.jpeg",
     emoji: "🌙"
   },
   {
+    id: 3,
+    date: "Growing Closer",
+    title: "Building Our Bond",
+    subtitle: "Through the laughs and little moments",
+    description: "Every day bringing us even closer. Learning about each other, sharing our days, and building a foundation of trust and unconditional support.",
+    side: "left",
+    image: "/WhatsApp Image 2026-06-03 at 9.35.33 PM.jpeg",
+    emoji: "🌹"
+  },
+  {
     id: 4,
-    date: "Year 2 · 2023",
-    title: "Through the Hard Days",
-    subtitle: "When you held my hand through everything",
-    description: "You never left. That's when I knew this was real...",
+    date: "Our Quiet Moments",
+    title: "Favorite Memories",
+    subtitle: "Every second with you is a gift",
+    description: "Finding happiness in the simplest moments, like just holding your hand, walking together, and seeing that beautiful smile of yours.",
     side: "right",
-    image: "/WhatsApp Video 2026-05-23 at 8.30.09 PM.mp4",
-    emoji: "🤝"
+    image: "/WhatsApp Image 2026-06-03 at 9.35.34 PM.jpeg",
+    emoji: "✨"
   },
   {
     id: 5,
-    date: "2023",
-    title: "Our Favorite Place",
-    subtitle: "Where we made the most memories",
-    description: "Every time we go back, it feels like home...",
+    date: "Today & Always",
+    title: "Our Journey",
+    subtitle: "Celebrating us",
+    description: "Choosing you, loving you through everything, and knowing that this is only the very beginning of our forever.",
     side: "left",
-    image: "/WhatsApp Image 2026-05-23 at 8.30.11 PM (1).jpeg",
-    emoji: "📍"
-  },
-  {
-    id: 6,
-    date: "Year 3 · 2024",
-    title: "Becoming Us",
-    subtitle: "Three years of choosing each other",
-    description: "We've grown so much. You've made me so much better...",
-    side: "right",
-    image: "/WhatsApp Video 2026-05-23 at 8.30.10 PM.mp4",
-    emoji: "💫"
-  },
-  {
-    id: 7,
-    date: "Today · 2025",
-    title: "Your 19th Birthday",
-    subtitle: "And still, it's you",
-    description: "Every day I wake up grateful it's still you...",
-    side: "left",
-    image: "/WhatsApp Image 2026-05-23 at 8.30.14 PM.jpeg",
-    emoji: "🎂"
+    image: "/WhatsApp Image 2026-06-03 at 9.35.36 PM.jpeg",
+    emoji: "💖"
   }
 ];

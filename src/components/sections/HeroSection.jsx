@@ -1,8 +1,17 @@
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import React, { useRef, useState, useEffect } from 'react';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+
+const heroImages = [
+  "/WhatsApp Image 2026-06-03 at 9.35.31 PM.jpeg",
+  "/WhatsApp Image 2026-06-03 at 9.35.33 PM.jpeg",
+  "/WhatsApp Image 2026-06-03 at 9.35.36 PM.jpeg",
+  "/WhatsApp Image 2026-06-03 at 9.35.37 PM.jpeg",
+  "/WhatsApp Image 2026-06-03 at 9.35.39 PM.jpeg"
+];
 
 export default function HeroSection() {
   const containerRef = useRef(null);
+  const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
   // Scroll tracking for parallax effects
   const { scrollYProgress } = useScroll({
@@ -11,27 +20,41 @@ export default function HeroSection() {
   });
 
   // Parallax the background image slightly slower than the scroll
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
   
   // Fade out elements as user scrolls down
   const opacityFade = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
+  // Slideshow timer
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImgIndex((prev) => (prev + 1) % heroImages.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section 
       ref={containerRef} 
       className="relative w-full h-screen overflow-hidden bg-black flex flex-col items-center justify-center"
     >
-      {/* ── Parallax Background Image ── */}
+      {/* ── Crossfading Background Slideshow ── */}
       <motion.div
         className="absolute inset-0 w-full h-full"
         style={{ y: backgroundY }}
       >
-        <img 
-          src="/birthady.jpeg" 
-          alt="Happy Birthday" 
-          className="w-full h-full object-cover opacity-80"
-          // If you ever want letterbox instead of full cover, change 'object-cover' to 'object-contain'
-        />
+        <AnimatePresence mode="wait">
+          <motion.img 
+            key={currentImgIndex}
+            src={heroImages[currentImgIndex]} 
+            alt="Celebrating Us" 
+            initial={{ opacity: 0, scale: 1.05 }}
+            animate={{ opacity: 0.6, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 1.8, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </AnimatePresence>
       </motion.div>
 
       {/* ── Darkening Overlay for Text Readability ── */}
@@ -56,7 +79,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.9, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.4, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="w-full max-w-[95vw] px-6 py-12 md:py-16 rounded-[3rem]"
+          className="w-full max-w-[95vw] sm:max-w-4xl px-4 sm:px-8 py-10 md:py-16 rounded-[2.5rem] sm:rounded-[3rem]"
           style={{
             background: 'rgba(255, 255, 255, 0.03)',
             backdropFilter: 'blur(20px)',
@@ -66,7 +89,7 @@ export default function HeroSection() {
           }}
         >
           <h1 
-            className="font-display font-black text-[12vw] sm:text-[140px] md:text-[180px] lg:text-[220px] leading-[0.9] tracking-tighter drop-shadow-2xl"
+            className="font-display font-black text-[7.5vw] sm:text-[52px] md:text-[68px] lg:text-[80px] leading-[1.1] tracking-tight drop-shadow-2xl"
             style={{
               background: 'linear-gradient(135deg, #FFFFFF 0%, #F5E6D3 40%, #F2C4CE 100%)',
               WebkitBackgroundClip: 'text',
@@ -75,13 +98,13 @@ export default function HeroSection() {
               textShadow: '0 10px 40px rgba(0,0,0,0.3)'
             }}
           >
-            Happy Birthday
+            A Gallery of U ❤️
           </h1>
           <p
             className="font-script text-3xl md:text-4xl mt-6 drop-shadow-[0_2px_20px_rgba(242,196,206,0.5)]"
             style={{ color: '#F2C4CE' }}
           >
-            My Bbg ❤️
+            My Bbg
           </p>
         </motion.div>
       </motion.div>

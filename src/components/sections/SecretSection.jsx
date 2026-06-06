@@ -4,7 +4,7 @@ import MediaRender from '../media/MediaRender';
 
 const MESSAGES = [
   'She smiles and the world forgets its worries.',
-  '3 years ago, everything changed. ✨',
+  'Since you walked into my life, everything changed. ✨',
   'You are someone\'s answered prayer.',
   'I\'d choose you in every lifetime.',
   'The brightest star in my sky.',
@@ -53,7 +53,7 @@ export default function SecretSection() {
       {/* Ambient background memory loop (fills empty dark space with high-end feel) */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.07] mix-blend-lighten">
         <MediaRender
-          src="/WhatsApp Image 2026-05-23 at 8.19.23 PM.jpeg"
+          src="/WhatsApp Image 2026-06-03 at 9.35.33 PM.jpeg"
           alt="Ambient memory background"
           className="w-full h-full object-cover scale-105 filter blur-[3px]"
         />

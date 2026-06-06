@@ -70,7 +70,7 @@ export default function FinalSection() {
         style={{ y: backgroundY }}
       >
         <MediaRender
-          src="/birthady.jpeg"
+          src="/WhatsApp Image 2026-06-03 at 9.35.39 PM.jpeg"
           alt="Ambient closing background"
           className="w-full h-full object-cover scale-110 filter blur-[1px]"
         />
@@ -138,7 +138,7 @@ export default function FinalSection() {
           }}
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         >
-          Happy 19th Birthday ❤️
+          I Love You, My Bbg ❤️
         </motion.h3>
       </motion.div>
 

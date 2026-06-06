@@ -4,11 +4,11 @@ import MediaRender from '../media/MediaRender';
 
 // ─── Photo data ───────────────────────────────────────────────────────────────
 const photos = [
-  { id: 1, img: '/WhatsApp Image 2026-05-23 at 8.30.12 PM (1).jpeg', cap: 'our little world',   rot: -6,  top: '10%', left: '8%',  delay: 0.1 },
-  { id: 2, img: '/WhatsApp Image 2026-05-23 at 8.30.12 PM.jpeg', cap: 'that one time...',    rot:  4,  top: '18%', left: '55%', delay: 0.3 },
-  { id: 3, img: '/WhatsApp Image 2026-05-23 at 8.30.13 PM (1).jpeg', cap: 'my favourite smile',  rot: -3,  top: '45%', left: '15%', delay: 0.5 },
-  { id: 4, img: '/WhatsApp Video 2026-05-23 at 8.30.12 PM.mp4', cap: 'forever.',            rot:  7,  top: '55%', left: '60%', delay: 0.2 },
-  { id: 5, img: '/WhatsApp Image 2026-05-23 at 8.30.13 PM (2).jpeg', cap: 'just us',             rot: -5,  top: '80%', left: '35%', delay: 0.4 },
+  { id: 1, img: '/WhatsApp Image 2026-06-03 at 9.35.36 PM (1).jpeg', cap: 'our little world',   rot: -6,  top: '10%', left: '8%',  delay: 0.1 },
+  { id: 2, img: '/WhatsApp Image 2026-06-03 at 9.35.36 PM (2).jpeg', cap: 'that one time...',    rot:  4,  top: '18%', left: '55%', delay: 0.3 },
+  { id: 3, img: '/WhatsApp Image 2026-06-03 at 9.35.34 PM.jpeg', cap: 'my favourite smile',  rot: -3,  top: '45%', left: '15%', delay: 0.5 },
+  { id: 4, img: '/WhatsApp Image 2026-06-03 at 9.35.37 PM.jpeg', cap: 'always you',            rot:  7,  top: '55%', left: '60%', delay: 0.2 },
+  { id: 5, img: '/WhatsApp Image 2026-06-03 at 9.35.38 PM (1).jpeg', cap: 'just us',             rot: -5,  top: '80%', left: '35%', delay: 0.4 },
 ];
 
 // ─── Component ────────────────────────────────────────────────────────────────

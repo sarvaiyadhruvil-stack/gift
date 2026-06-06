@@ -6,10 +6,10 @@ import MediaRender from '../media/MediaRender';
 
 // ─── Scattered Background Memories ───────────────────────────────────────────
 const scatteredMemories = [
-  { id: 1, src: "/WhatsApp Image 2026-05-23 at 8.19.20 PM (1).jpeg", rotation: -12, top: "15%", left: "10%", delay: 0.2 },
-  { id: 2, src: "/WhatsApp Image 2026-05-23 at 8.19.22 PM (2).jpeg", rotation: 15, top: "20%", right: "8%", delay: 0.4 },
-  { id: 3, src: "/WhatsApp Image 2026-05-23 at 8.19.21 PM (3).jpeg", rotation: -8, bottom: "18%", left: "12%", delay: 0.6 },
-  { id: 4, src: "/WhatsApp Video 2026-05-23 at 8.19.27 PM.mp4", rotation: 10, bottom: "15%", right: "10%", delay: 0.3 },
+  { id: 1, src: "/WhatsApp Image 2026-06-03 at 9.35.38 PM (1).jpeg", rotation: -12, top: "15%", left: "10%", delay: 0.2 },
+  { id: 2, src: "/WhatsApp Image 2026-06-03 at 9.35.38 PM (2).jpeg", rotation: 15, top: "20%", right: "8%", delay: 0.4 },
+  { id: 3, src: "/WhatsApp Image 2026-06-03 at 9.35.38 PM (3).jpeg", rotation: -8, bottom: "18%", left: "12%", delay: 0.6 },
+  { id: 4, src: "/WhatsApp Image 2026-06-03 at 9.35.38 PM.jpeg", rotation: 10, bottom: "15%", right: "10%", delay: 0.3 },
 ];
 
 // ─── Envelope ─────────────────────────────────────────────────────────────────
